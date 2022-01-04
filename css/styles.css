@@ -596,7 +596,7 @@ select {
 /*********************/
 .basic-1 {
 	padding-top: 2.5rem;
-	padding-bottom: 5rem;
+	padding-bottom: 0;
 }
 
 .basic-1 .image-container {
