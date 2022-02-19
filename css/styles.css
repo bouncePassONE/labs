@@ -138,7 +138,7 @@ a:hover {
 }
 
 .bg-gray {
-	background-color: #f9f9f9;
+	background-color: #ffffff;
 }
 
 .section-title {
@@ -488,8 +488,8 @@ select {
 /*     Header     */
 /******************/
 .header {
-	padding-top: 8rem;
-	padding-bottom: 5rem;
+	padding-top: 4rem;
+	padding-bottom: 1rem;
 	text-align: center;
 }
 
@@ -517,7 +517,7 @@ select {
 }
 
 .header .text-container {
-	margin-bottom: 5rem;
+	margin-bottom: 0rem;
 }
 
 
@@ -596,7 +596,7 @@ select {
 /*********************/
 .basic-1 {
 	padding-top: 2.5rem;
-	padding-bottom: 5rem;
+	padding-bottom: 0;
 }
 
 .basic-1 .image-container {
@@ -1008,8 +1008,8 @@ select {
 /******************/
 .footer {
 	position: relative;
-	padding-top: 8.75rem;
-	padding-bottom: 7.5rem;
+	padding-top: 0;
+	padding-bottom: 0;
 	text-align: center;
 }
 
@@ -1168,7 +1168,8 @@ select {
 
 	/* Header */
 	.header {
-		padding-top: 9rem;
+		padding-top: 4rem;
+    padding-bottom: 1rem;
 	}
 
 	.header .h1-large {
@@ -1228,7 +1229,7 @@ select {
 
 	/* Navigation */
 	.navbar {
-		padding-top: 1.75rem;
+		padding-top: 0.75rem;
 		background-color: #ffffff;
 		box-shadow: none;
 		transition: all 0.2s;
@@ -1292,8 +1293,8 @@ select {
 
 	/* Header */
 	.header {
-		padding-top: 13rem;
-		text-align: left;
+		padding-top: 4rem;
+		text-align: center;
 	}
 
 	.header .text-container {
@@ -1512,8 +1513,8 @@ select {
 	/* Header */
 	.header {
 		overflow: hidden;
-		padding-top: 10rem;
-		padding-bottom: 11.5rem;
+		padding-top: 4rem;
+		padding-bottom: 0rem;
 	}
 
 	.header .image-container {
