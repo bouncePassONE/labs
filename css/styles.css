@@ -204,6 +204,7 @@ a:hover {
 	line-height: 0;
 	text-decoration: none;
 	transition: all 0.2s;
+  margin-bottom: 1rem;
 }
 
 .btn-solid-sm:hover {
@@ -498,7 +499,7 @@ select {
 }
 
 .header .p-large {
-	margin-bottom: 2.75rem;
+	margin-bottom: 0.75rem;
 }
 
 .header .btn-solid-lg {
