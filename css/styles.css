@@ -205,6 +205,7 @@ a:hover {
 	text-decoration: none;
 	transition: all 0.2s;
   margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .btn-solid-sm:hover {
@@ -1014,9 +1015,9 @@ select {
 	text-align: center;
 }
 
-.footer .decoration-city {
+.header .decoration-city {
 	position: absolute;
-	bottom: 0;
+	bottom: 10px;
 	left: 0;
 }
 
@@ -1025,6 +1026,7 @@ select {
 	/* needed so that the absolute positioned decoration stays behind */
 	position: relative;
 }
+
 
 .footer h4 {
 	margin-bottom: 2rem;
@@ -1295,6 +1297,7 @@ select {
 	/* Header */
 	.header {
 		padding-top: 4rem;
+    margin-bottom: 10px;
 		text-align: center;
 	}
 
