@@ -8,7 +8,7 @@ B1 - Harmony Staking Solutions: Interactive staking with trusted validators.
 
 RoadMap 2022 -
 
-3/1 - Onsite Staff 30hrs per week. M-F 12-6pm EST.
+Onsite Staff
 
 Vyper Safe: Smart Contract Wallet for staking ONE on Harmony.<br>
 Enhanced security with backup account and safeSend retrievable transfers.
