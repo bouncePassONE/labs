@@ -4,18 +4,18 @@ Visit [bP Labs office](https://app.gather.town/app/l9jmY2GqD50krvOW/C%203-7) on 
 
 Open Floors:<br>
 M  - Main Floor: Welcome and Information.<br>
-B1 - Harmony Staking Solutions: Interactive staking with trusted validators.
+B1 - Harmony Staking: Delegate to trusted validators.
 
 RoadMap 2022 -
 
 Onsite Staff
 
-Vyper Safe: Smart Contract Wallet for staking ONE on Harmony.<br>
-Enhanced security with backup account and safeSend retrievable transfers.
+bP Safe: Smart Contract Wallet for staking on Harmony.
+Enhanced security, backup account and safeSend retrievable transfers.
 
-bPFund: Actively Managed, Non-custodial portfolio of trusted validators.
+bP32: Actively monitored portfolio of trusted validators.
 
-h1st derivative: Staking derivative utilizing bPFund.
+h1st
 
-<b>bP Labs trusted on web3 and Metaverse platforms.</b><br>
+bP Labs trusted on web3 and Metaverse platforms.
 Open Source Promise: Code, Assets, Accounting, Executive Info fully available and continuosly updated.
