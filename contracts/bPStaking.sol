@@ -1,5 +1,5 @@
 //SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.10;
 
 enum Directive {
   DELEGATE,
@@ -15,7 +15,6 @@ abstract contract StakingPrecompilesSelectors {
                       address validatorAddress,
                       uint256 amount) public virtual;
   function CollectRewards(address delegatorAddress) public virtual;
-  function Migrate(address from, address to) public virtual;
 }
 
 /**
@@ -38,6 +37,8 @@ abstract contract Context {
     }
 }
 
+// Contract containing internal assembly staking functions for calling precompiles @ 0xfc
+
 contract StakingPrecompilesDelegatecall is Context {
   function delegate(address validatorAddress, uint256 amount) internal returns (uint256 result) {
     bytes memory encodedInput = abi.encodeWithSelector(StakingPrecompilesSelectors.Delegate.selector,
@@ -45,7 +46,7 @@ contract StakingPrecompilesDelegatecall is Context {
                                     validatorAddress,
                                     amount);
     assembly {
-      // we estimate a gas consumption of 25k per precompile
+      // Estimated gas consumption of 25k per precompile
       result := delegatecall(25000,
         0xfc,
 
@@ -63,7 +64,7 @@ contract StakingPrecompilesDelegatecall is Context {
                                     validatorAddress,
                                     amount);
     assembly {
-      // we estimate a gas consumption of 25k per precompile
+      // Estimated gas consumption of 25k per precompile
       result := delegatecall(25000,
         0xfc,
 
@@ -79,7 +80,7 @@ contract StakingPrecompilesDelegatecall is Context {
     bytes memory encodedInput = abi.encodeWithSelector(StakingPrecompilesSelectors.CollectRewards.selector,
                                     _msgSender());
     assembly {
-      // we estimate a gas consumption of 25k per precompile
+      // Estimated gas consumption of 25k per precompile
       result := delegatecall(25000,
         0xfc,
 
@@ -91,6 +92,8 @@ contract StakingPrecompilesDelegatecall is Context {
     }
   }
 }
+
+// User facing contract for staking
 
 contract bPStaking is StakingPrecompilesDelegatecall {
 
@@ -123,6 +126,7 @@ contract bPStaking is StakingPrecompilesDelegatecall {
         success = result != 0;
         emit StakingPrecompileCalled(uint8(Directive.COLLECT_REWARDS), success);
     }
+    // Delegate to an array of validators
     function bPMultiDelegate(Delegation[] memory delegations) public returns (bool success) {
         success = true;
         uint256 length = delegations.length;
@@ -134,7 +138,7 @@ contract bPStaking is StakingPrecompilesDelegatecall {
         }
         emit StakingPrecompileCalled(uint8(Directive.DELEGATE), success);
     }
-    // Undelegate to an array of undelegations
+    // Undelegate to an array of validators
     function bPMultiUndelegate(Undelegation[] memory undelegations) public returns (bool success) {
         success = true;
         uint256 length = undelegations.length;
