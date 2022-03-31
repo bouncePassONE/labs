@@ -10,10 +10,10 @@ RoadMap 2022 - 🚀
 
 👨‍💻👩‍💻 Onsite Staff
 
+❤️ bP32: Actively monitored portfolio of trusted validators.
+
 🏦 bP Safe: Smart Contract Safe for staking on Harmony.
 Enhanced security, backup account and safeSend retrievable transfers.
-
-❤️ bP32: Actively monitored portfolio of trusted validators.
 
 💎 h1st?
 
