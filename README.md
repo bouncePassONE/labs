@@ -10,7 +10,7 @@ RoadMap 2022 -
 
 Onsite Staff
 
-bP Safe: Smart Contract Wallet for staking on Harmony.
+bP Safe: Smart Contract Safe for staking on Harmony.
 Enhanced security, backup account and safeSend retrievable transfers.
 
 bP32: Actively monitored portfolio of trusted validators.
