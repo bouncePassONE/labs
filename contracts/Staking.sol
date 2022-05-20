@@ -12,8 +12,9 @@ abstract contract StakingPrecompilesSelectors {
         uint256 amount) public virtual;
 
     function CollectRewards(address delegatorAddress) public virtual;
-
-    function Migrate(address from, address to) public virtual;
+   
+   // Removed
+   // function Migrate(address from, address to) public virtual;
 }
 
 library Staking {
